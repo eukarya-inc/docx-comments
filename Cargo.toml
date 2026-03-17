@@ -1,0 +1,18 @@
+[package]
+name = "docx-comment-json"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.39", features = ["derive"] }
+roxmltree = "0.20.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+zip = { version = "2.4.2", default-features = false, features = ["deflate"] }
+
+[dev-dependencies]
+tempfile = "3.20.0"
+
+[[bin]]
+name = "docx-comment-json"
+path = "src/main.rs"

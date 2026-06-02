@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: docx-comments
+  namespace: eukarya-inc
+  annotations:
+    github.com/project-slug: eukarya-inc/docx-comments
+  links:
+  - url: https://github.com/eukarya-inc/docx-comments
+    title: GitHub
+    icon: github
+  tags:
+  - rust
+spec:
+  type: documentation
+  lifecycle: production
+  owner: eukarya-inc/sre
